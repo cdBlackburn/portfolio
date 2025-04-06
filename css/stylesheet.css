@@ -1,4 +1,162 @@
+/* whole page edits */
+*
+{
+	font-family: "Courier New", "Georgia", monospace, serif;
+}
 body
 {
   background-color: #FAFAFF;
+  /* first choice font, fallback fonts */
+  color: #30343F;
+  margin: 0px;
+}
+header h1, nav h3, footer p
+{
+	border: 3px outset #FFFFFF;
+}
+hr
+{
+	width: 95%;
+	border: 1px solid #2C2A4A;
+}
+textarea
+{
+	resize: none;
+}
+.center
+{
+	text-align: center;
+}
+
+/* page header edits */
+header
+{
+	background-color: #30343F;
+	color: #FAFAFF;
+	padding: 5px;
+	text-align: center;
+	border: 3px solid #907AD6;
+	border-style: none none solid none;
+}
+header h1
+{
+	background-color: #FAFAFF;
+	color: #30343F;
+	padding: 5px;
+}
+header nav h3
+{
+	background-color: #E4D9FF;
+	padding: 5px;
+}
+header a
+{
+	display: inline-block;
+	background-color: #907AD6;
+	color: #30343F;
+	padding: 10px 5px;
+	width: 27%;
+	text-decoration: none;
+	border: 3px outset #30343F;
+}
+header a:hover
+{
+	background-color: #4F518C;
+	color: #E4D9FF;
+	font-weight: bold;
+	border: 3px inset #30343F;
+}
+#logo
+{
+	width: 20%;
+	height: 20%;
+	width: 10px;
+}
+
+/* main page content edits */
+article h2, article h3
+{
+	background-color: #2C2A4A;
+	color: #E4D9FF;
+	padding: 10px;
+	text-align: center;
+	border: 3px outset #2C2A4A;
+}
+section h2
+{
+	background-color: #2C2A4A;
+	color: #E4D9FF;
+	padding: 10px;
+	text-align: center;
+	border: 3px outset #2C2A4A;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+section h3
+{
+	background-color: #907AD6;
+	color: #FAFAFF;
+	padding: 10px;
+	text-align: center;
+	border: 3px outset #2C2A4A;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+section p
+{
+	background-color: #907AD6;
+	color: #FAFAFF;
+	padding: 10px;
+	border: 3px outset #2C2A4A;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+article p, .bodyBlock
+{
+	background-color: #4F518C;
+	color: #E4D9FF;
+	padding: 5px;
+	border: 3px outset #6c65b5;
+}
+article img
+{
+	border: 1px solid red;
+}
+#box
+{
+	width: 80%;
+	padding: 5px;
+}
+body article
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+body article div
+{
+	max-width: 300px;
+}
+
+/* footer */
+footer
+{
+	background-color: #30343F;
+	padding: 10px;
+	border: 3px solid #907AD6;
+	border-style: solid none none none;
+	margin-top: 10px;
+}
+footer p
+{
+	background-color: #FAFAFF;
+	color: #30343F;
+	padding: 5px;
+	margin: 0px 40px;
+	text-align: center;
+	max-width: 70%;
+	margin: auto;
 }
