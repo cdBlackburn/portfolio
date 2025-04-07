@@ -38,7 +38,7 @@ header
 	border: 3px solid #907AD6;
 	border-style: none none solid none;
 }
-header h1
+header div h1
 {
 	background-color: #FAFAFF;
 	color: #30343F;
@@ -49,7 +49,7 @@ header nav h3
 	background-color: #E4D9FF;
 	padding: 5px;
 }
-header a
+header nav h3 a
 {
 	display: inline-block;
 	background-color: #907AD6;
@@ -59,7 +59,7 @@ header a
 	text-decoration: none;
 	border: 3px outset #30343F;
 }
-header a:hover
+header nav h3 a:hover
 {
 	background-color: #4F518C;
 	color: #E4D9FF;
@@ -70,6 +70,11 @@ header a:hover
 {
 	width: 20%;
 	height: 20%;
+}
+header div
+{
+  display: inline-grid;
+  grid-template-columns: auto auto;
 }
 
 /* main page content edits */
@@ -129,13 +134,13 @@ article img
 	width: 80%;
 	padding: 5px;
 }
-body article
+article
 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-body article div
+article div
 {
 	max-width: 300px;
 }
