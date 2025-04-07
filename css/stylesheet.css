@@ -66,11 +66,11 @@ header nav h3 a:hover
 	font-weight: bold;
 	border: 3px inset #30343F;
 }
-//#logo
-//{
-//	width: 20%;
-//	height: 20%;
-//}
+/*#logo
+{
+	width: 20%;
+	height: 20%;
+} */
 header div
 {
   display: inline-grid;
