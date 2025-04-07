@@ -76,6 +76,10 @@ header div
   display: inline-grid;
   grid-template-columns: auto auto;
 }
+header div div 
+{
+	width: 100%;
+}
 
 /* main page content edits */
 article h2, article h3
