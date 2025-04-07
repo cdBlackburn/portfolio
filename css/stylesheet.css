@@ -66,20 +66,20 @@ header nav h3 a:hover
 	font-weight: bold;
 	border: 3px inset #30343F;
 }
-/*#logo
-{
-	width: 20%;
-	height: 20%;
-} */
+//#logo
+//{
+//	width: 20%;
+//	height: 20%;
+//}
 header div
 {
   display: inline-grid;
   grid-template-columns: auto auto;
 }
-header div div 
+/*header div div 
 {
 	width: 100%;
-}
+}*/
 
 /* main page content edits */
 article h2, article h3
