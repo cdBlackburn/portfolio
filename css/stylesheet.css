@@ -1,161 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
+/* whole page edits */
+*
+{
+	font-family: "Courier New", "Georgia", monospace, serif;
+}
+body
+{
+  background-color: #FAFAFF;
+  /* first choice font, fallback fonts */
+  color: #30343F;
+  margin: 0px;
+}
+header h1, nav h3, footer p
+{
+	border: 3px outset #FFFFFF;
+}
+hr
+{
+	width: 95%;
+	border: 1px solid #2C2A4A;
+}
+textarea
+{
+	resize: none;
+}
+.center
+{
+	text-align: center;
+}
 
-<meta name="description" content="portfolio home / index page">
-<meta name="keywords" content="cas blackburn, alissa blackburn, blackburn, portfolio, about me, skills, media arts, applied computing, uofsc, university of south carolina, web design, website design, programming, photography, digital art, graphic design, art drawing, character design, game design, inquiry, contact, form">
-<meta name="author" content="Cas (Alissa) Blackburn">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* page header edits */
+header
+{
+	background-color: #30343F;
+	color: #FAFAFF;
+	padding: 5px;
+	text-align: center;
+	border: 3px solid #907AD6;
+	border-style: none none solid none;
+}
+header div h1
+{
+	background-color: #FAFAFF;
+	color: #30343F;
+	padding: 5px;
+}
+header nav h3
+{
+	background-color: #E4D9FF;
+	padding: 5px;
+}
+header nav h3 a
+{
+	display: inline-block;
+	background-color: #907AD6;
+	color: #30343F;
+	padding: 10px 5px;
+	width: 27%;
+	text-decoration: none;
+	border: 3px outset #30343F;
+}
+header nav h3 a:hover
+{
+	background-color: #4F518C;
+	color: #E4D9FF;
+	font-weight: bold;
+	border: 3px inset #30343F;
+}
+//#logo
+//{
+//	width: 20%;
+//	height: 20%;
+//}
+header div
+{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+header div div 
+{
+	width: 100%;
+}
 
-<title> Cas Blackburn - Home </title>
+/* main page content edits */
+article h2, article h3
+{
+	background-color: #2C2A4A;
+	color: #E4D9FF;
+	padding: 10px;
+	text-align: center;
+	border: 3px outset #2C2A4A;
+}
+section h2
+{
+	background-color: #2C2A4A;
+	color: #E4D9FF;
+	padding: 10px;
+	text-align: center;
+	border: 3px outset #2C2A4A;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+section h3
+{
+	background-color: #907AD6;
+	color: #FAFAFF;
+	padding: 10px;
+	text-align: center;
+	border: 3px outset #2C2A4A;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+section p
+{
+	background-color: #907AD6;
+	color: #FAFAFF;
+	padding: 10px;
+	border: 3px outset #2C2A4A;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+article p, .bodyBlock
+{
+	background-color: #4F518C;
+	color: #E4D9FF;
+	padding: 5px;
+	border: 3px outset #6c65b5;
+}
+article img
+{
+	border: 1px solid red;
+}
+#box
+{
+	width: 80%;
+	padding: 5px;
+}
+article
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+article div
+{
+	max-width: 300px;
+}
 
-<!-- stylesheet -->
-<link href="css/stylesheet.css" rel="stylesheet">
-
-</head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KS68YTKQW7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KS68YTKQW7');
-</script>
-  
-<body>
-
-
-
-<header>
-
-<!-- flex container hopefully! -->
-<div>
-
-<!-- logo -->
-<img src="images/logo.jpg" alt="Cas Logo" id="logo">
-
-<div>
-<!-- name -->
-<h1> Cas Blackburn </h1>
-
-<br>
-
-<!-- proposition -->
-<h2> Programming, design, animation </h2>
-
-</div>
-
-</div>
-
-  
-
-<!-- page navigation -->
-<nav>
-
-<h3>
-<!-- links -->
-<a href="index.html">Home</a>
-<a href="gallery.html">Works</a>
-<a href="form.html">Inquiries</a>
-
-</h3>
-</nav>
-</header>
-
-
-
-<!-- about me -->
-<article>
-
-<!-- left block -->
-<div>
-
-<!-- header -->
-<h2> About Me </h2>
-
-<!-- content -->
-<p>
-&nbsp;&nbsp;&nbsp;Welcome! My name is Alissa Blackburn, but I go by Cas. My pronouns are they/them and I am a senior at UofSC. I will be graduating December of this year with a degree in Media Arts and a minor in Applied Computing. I have been pursuing the arts for ten years now and programming for two. 
-<br>
-&nbsp;&nbsp;&nbsp;I recently discovered my passion for combining programming and art which has resulted in an interest in website design and video game design. Please take a look at my works and contact me if you're interested in working with me. 
-</p>
-</div>
-
-<!-- right block -->
-<div>
-
-<!-- self portrait -->
-<img src="images/selfPortrait.JPG" alt="Self Portrait" width="100%">
-
-</div>
-</article>
-
-<br><hr><br>
-
-<!-- skills -->
-<article>
-
-<!-- columns -->
-<table>
-<!-- td is half width -->
-<tr><td width="50%">
-
-<!-- image slideshow -->
-<!-- left image -->
-<img id="leftImg" src="images/orchid.JPG" alt="Left" width="32%">
-
-<!-- middle image -->
-<img id="midImg" src="images/mandala.JPG" alt="Middle" width="32%">
-
-<!-- right image -->
-<img id="rightImg" src="images/charcoalPenHand.jpg" alt="Right" width="32%">
-
-<!-- caption -->
-<h4 id="caption" class="center"> Image </h4>
-
-</td><td>
-
-<!-- header -->
-<h3> Skills </h3>
-
-<!-- content -->
-<div class="bodyBlock">
-<ul>
-<li> Animation </li>
-<li> Digital Design </li>
-<li> Editing (Video and Photo) </li>
-<li> HTML, CSS, JavaScript </li>
-<li> Illustration </li>
-<li> Photography </li>
-<li> Python </li>
-<li> Unity </li>
-<li> Video Game Design </li>
-<li> Videography </li>
-<li> Website Design </li>
-</ul>
-</div>
-
-</td></tr>
-</table>
-</article>
-
-
-
-<!-- footer -->
-<footer>
-
-<!-- copyright information -->
-<p>
-Designed and programmed by Cas Blackburn
-</p>
-
-</footer>
-
-
-
-<!-- closing tags -->
-</body>
-</html>
+/* footer */
+footer
+{
+	background-color: #30343F;
+	padding: 10px;
+	border: 3px solid #907AD6;
+	border-style: solid none none none;
+	margin-top: 10px;
+}
+footer p
+{
+	background-color: #FAFAFF;
+	color: #30343F;
+	padding: 5px;
+	margin: 0px 40px;
+	text-align: center;
+	max-width: 70%;
+	margin: auto;
+}
