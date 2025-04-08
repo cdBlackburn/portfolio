@@ -68,13 +68,11 @@ header nav h3 a:hover
 }
 #logo
 {
-	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column: 1 / span 1;
 }
 #header
 {
-	grid-column-start: 2;
-	grid-column-end: 4;
+	grid-column: 2 / span 3;
 }
 header div
 {
