@@ -48,10 +48,14 @@ header nav h3
 {
 	background-color: #E4D9FF;
 	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: space-evenly;
 }
 header nav h3 a
 {
-	display: inline-block;
 	background-color: #907AD6;
 	color: #30343F;
 	padding: 10px 5px;
@@ -68,21 +72,20 @@ header nav h3 a:hover
 }
 #logo
 {
-	grid-column: 1 / span 1;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	max-height: 300px;
 }
-#header
-{
-	grid-column: 2 / span 3;
-}
-header div
+#container
 {
   display: inline-grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 25% 75%;
 }
-/*header div div 
+#container h1
 {
-	width: 100%;
-}*/
+	margin: 20px;
+}
 
 /* main page content edits */
 article h2, article h3
