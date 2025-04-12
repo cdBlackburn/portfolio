@@ -24,6 +24,8 @@
 
   gtag('config', 'G-KS68YTKQW7');
 </script>
+
+<script src="js/program.js"></script>
   
 <body>
 
@@ -42,8 +44,6 @@
 <div id="header">
 <!-- name -->
 <h1> Cas Blackburn </h1>
-
-<br>
 
 <!-- proposition -->
 <h2> Programming, design, animation </h2>
@@ -100,25 +100,32 @@
 <!-- skills -->
 <article>
 
-<!-- columns -->
-<table>
-<!-- td is half width -->
-<tr><td width="50%">
+<!-- left -->
+<div>
 
 <!-- image slideshow -->
+<span class="flex">
 <!-- left image -->
-<img id="leftImg" src="images/orchid.JPG" alt="Left" width="32%">
+<img id="leftImg" src="images/orchid.JPG" alt="Pink Orchids" width="30%">
 
 <!-- middle image -->
-<img id="midImg" src="images/mandala.JPG" alt="Middle" width="32%">
+<img id="midImg" src="images/mandala.JPG" alt="Digital Mandala" width="30%">
 
 <!-- right image -->
-<img id="rightImg" src="images/charcoalPenHand.jpg" alt="Right" width="32%">
+<img id="rightImg" src="images/charcoalPenHand.jpg" alt="Charcoal Illustration" width="30%">
+</span>
 
 <!-- caption -->
-<h4 id="caption" class="center"> Image </h4>
+<h4 class="center"> 
+<input type="button" value="<--" onclick="slideshowL('leftImg', 'midImg', 'rightImg')">  
+<span id="caption">Digital Mandala</span>
+<input type="button" value="-->" onclick="slideshowR('leftImg', 'midImg', 'rightImg')">
+</h4>
 
-</td><td>
+</div>
+
+<!-- right -->
+<div>
 
 <!-- header -->
 <h3> Skills </h3>
@@ -127,6 +134,7 @@
 <div class="bodyBlock">
 <ul>
 <li> Animation </li>
+<li> Creative Cloud </li>
 <li> Digital Design </li>
 <li> Editing (Video and Photo) </li>
 <li> HTML, CSS, JavaScript </li>
@@ -140,8 +148,7 @@
 </ul>
 </div>
 
-</td></tr>
-</table>
+</div>
 </article>
 
 
