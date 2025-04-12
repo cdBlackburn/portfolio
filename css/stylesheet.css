@@ -27,6 +27,10 @@ textarea
 {
 	text-align: center;
 }
+img
+{
+	border: 3px ridge #2C2A4A;
+}
 
 /* page header edits */
 header
@@ -76,6 +80,7 @@ header nav h3 a:hover
 	padding: 0px;
 	width: 100%;
 	max-height: 300px;
+	border: none;
 }
 #container
 {
@@ -135,9 +140,10 @@ article p, .bodyBlock
 	padding: 5px;
 	border: 3px outset #6c65b5;
 }
-article img
+.bodyBlock
 {
-	border: 1px solid red;
+	max-width: none;
+	margin: 0px;
 }
 #box
 {
@@ -148,7 +154,10 @@ article
 {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: space-evenly;
+	margin-top: 5px;
 }
 article div
 {
@@ -157,6 +166,7 @@ article div
 }
 .flex
 {
+	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
@@ -166,6 +176,12 @@ article div
 #self
 {
 	max-height: 400px;
+}
+#caption
+{
+	background-color: #E4D9FF;
+	padding: 5px;
+	border: 3px outset #FFFFFF;
 }
 
 /* footer */
