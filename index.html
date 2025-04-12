@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 
-<meta name="description" content="personal works photo gallery">
+<meta name="description" content="portfolio home / index page">
 <meta name="keywords" content="cas blackburn, alissa blackburn, blackburn, portfolio, about me, skills, media arts, applied computing, uofsc, university of south carolina, web design, website design, programming, photography, digital art, graphic design, art drawing, character design, game design, inquiry, contact, form">
 <meta name="author" content="Cas (Alissa) Blackburn">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title> Cas Blackburn - Gallery </title>
+<title> Cas Blackburn - Home </title>
 
 <!-- stylesheet -->
 <link href="css/stylesheet.css" rel="stylesheet">
@@ -24,12 +24,13 @@
 
   gtag('config', 'G-KS68YTKQW7');
 </script>
+
+<script src="js/program.js"></script>
   
 <body>
 
 
 
-<!-- header -->
 <header>
 
 <!-- flex container hopefully! -->
@@ -41,12 +42,17 @@
 </div>
 
 <div id="header">
-<!-- header -->
-<h1> Works </h1>
+<!-- name -->
+<h1> Cas Blackburn </h1>
+
+<!-- proposition -->
+<h2> Programming, design, animation </h2>
 
 </div>
 
 </div>
+
+  
 
 <!-- page navigation -->
 <nav>
@@ -63,269 +69,87 @@
 
 
 
-<!-- design -->
-<section>
+<!-- about me -->
+<article class="flex">
+
+<!-- left block -->
+<div>
 
 <!-- header -->
-<h2> Design </h2>
+<h2> About Me </h2>
 
-<!-- columns -->
-<table>
-<tr><td width="50%">
+<!-- content -->
+<p>
+&nbsp;&nbsp;&nbsp;Welcome! My name is Alissa Blackburn, but I go by Cas. My pronouns are they/them and I am a senior at UofSC. I will be graduating December of this year with a degree in Media Arts and a minor in Applied Computing. I have been pursuing the arts for ten years now and programming for two. 
+<br>
+&nbsp;&nbsp;&nbsp;I recently discovered my passion for combining programming and art which has resulted in an interest in website design and video game design. Please take a look at my works and contact me if you're interested in working with me. 
+</p>
+</div>
 
-<!-- image one -->
-<img src="images/businessCard.jpg" alt="1" width="100%">
+<!-- right block -->
+<div>
 
-</td><td>
+<!-- self portrait -->
+<img src="images/selfPortrait.JPG" alt="Self Portrait" width="100%" id="self">
 
-<!-- image two -->
-<img src="images/shopAdvertisement.jpg" alt="2" width="100%">
-
-</td></tr>
-</table>
-</section>
-
-
+</div>
+</article>
 
 <br><hr><br>
 
+<!-- skills -->
+<article>
 
+<!-- left -->
+<div>
 
-<!-- art -->
-<section>
+<!-- image slideshow -->
+<span class="flex">
+<!-- left image -->
+<img id="leftImg" src="images/orchid.JPG" alt="Pink Orchids" width="30%">
 
-<!-- header -->
-<h2> Art </h2>
+<!-- middle image -->
+<img id="midImg" src="images/mandala.JPG" alt="Digital Mandala" width="30%">
 
-<!-- columns -->
-<table>
-<!-- row one -->
-<tr>
+<!-- right image -->
+<img id="rightImg" src="images/charcoalPenHand.jpg" alt="Charcoal Illustration" width="30%">
+</span>
 
-<!-- image one -->
-<td width="28%">
-<img src="images/charcoalPenHand.jpg" alt="1" width="100%">
-</td>
+<!-- caption -->
+<h4 class="center"> 
+<input type="button" value="<--" onclick="slideshowL('leftImg', 'midImg', 'rightImg')">  
+<span id="caption">Digital Mandala</span>
+<input type="button" value="-->" onclick="slideshowR('leftImg', 'midImg', 'rightImg')">
+</h4>
 
-<!-- image two -->
-<td width="28%">
-<img src="images/goats.JPG" alt="2" width="100%">
-</td>
+</div>
 
-<!-- image three -->
-<td rowspan="2" width="43%">
-<img src="images/mandala.JPG" alt="3" width="100%">
-</td>
-</tr>
-
-<!-- row two -->
-<tr>
-
-<!-- image four -->
-<td>
-<img src="images/charcoalCamera.JPG" alt="4" width="100%">
-</td>
-
-<!-- image five -->
-<td rowspan="2">
-<img src="images/homeScreen.JPG" alt="5" width="100%">
-</td>
-</tr>
-
-<!-- row three -->
-<tr>
-
-<!-- image six -->
-<td>
-<img src="images/characterIllustration.JPG" alt="6" width="100%">
-</td>
-
-<!-- image seven -->
-<td>
-<img src="images/ereUnder.JPG" alt="7" width="100%">
-</td>
-</tr>
-
-<!-- row four -->
-<tr>
-
-<!-- image eight -->
-<td>
-<img src="images/characterDesign.JPG" alt="8" width="100%">
-</td>
-
-<!-- image nine -->
-<td>
-<img src="images/bassGuitar.JPG" alt="9" width="100%">
-</td>
-
-<!-- image ten -->
-<td>
-<img src="images/ereCloaked.JPG" alt="10" width="100%">
-</td>
-
-</tr>
-</table>
-</section>
-
-
-
-<br><hr><br>
-
-
-
-<!-- photography -->
-<section>
+<!-- right -->
+<div>
 
 <!-- header -->
-<h2> Photography </h2>
+<h3> Skills </h3>
 
-<!-- columns -->
-<table>
-<!-- row one -->
-<tr>
+<!-- content -->
+<div class="bodyBlock">
+<ul>
+<li> Animation </li>
+<li> Creative Cloud </li>
+<li> Digital Design </li>
+<li> Editing (Video and Photo) </li>
+<li> HTML, CSS, JavaScript </li>
+<li> Illustration </li>
+<li> Photography </li>
+<li> Python </li>
+<li> Unity </li>
+<li> Video Game Design </li>
+<li> Videography </li>
+<li> Website Design </li>
+</ul>
+</div>
 
-<!-- image one -->
-<td width="28%">
-<img src="images/pinkFlower.JPG" alt="1" width="100%">
-</td>
-
-<!-- image two -->
-<td width="28%">
-<img src="images/stumpWoodStar.jpeg" alt="2" width="100%">
-</td>
-
-<!-- image three -->
-<td rowspan="2" width="44%">
-<img src="images/robertPortrait.jpeg" alt="3" width="100%">
-</td>
-</tr>
-
-<!-- row two -->
-<tr>
-
-<!-- image four -->
-<td rowspan="2">
-<img src="images/orchid.JPG" alt="4" width="100%">
-</td>
-
-<!-- image five -->
-<td rowspan="2">
-<img src="images/stumpWoodCloseup.JPG" alt="5" width="100%">
-</td>
-</tr>
-
-<!-- row three -->
-<tr>
-
-<!-- image six -->
-<td rowspan="2">
-<img src="images/woodenSkylight.JPG" alt="6" width="100%">
-</td>
-</tr>
-
-<!-- row four -->
-<tr>
-
-<!-- image seven -->
-<td>
-<img src="images/pineBranchFlare.JPG" alt="7" width="100%">
-</td>
-
-<!-- image eight -->
-<td>
-<img src="images/piperCloseup.JPG" alt="8" width="100%">
-</td>
-
-</tr>
-</table>
-</section>
-
-
-
-<br><hr><br>
-
-
-
-<!-- programming -->
-<section>
-
-<!-- header -->
-<h2> Programming </h2>
-
-<!-- columns -->
-<table>
-<!-- row one -->
-<tr>
-
-<!-- image one -->
-<td width="21%">
-<img src="images/start.jpg" alt="1" width="100%">
-</td>
-
-<!-- image two -->
-<td rowspan="2" width="32%">
-<img src="images/ottie.jpg" alt="2" width="100%">
-</td>
-
-<!-- image three -->
-<td rowspan="3" width="47%">
-<img src="images/choice.jpg" alt="3" width="100%">
-</td>
-</tr>
-
-<!-- row two -->
-<tr>
-
-<!-- image four -->
-<td rowspan="2">
-<img src="images/about.jpg" alt="4" width="100%">
-</td>
-</tr>
-
-<!-- row three -->
-<tr>
-
-<!-- image five -->
-<td rowspan="2">
-<img src="images/gallery.jpg" alt="5" width="100%">
-</td>
-</tr>
-
-<!-- row four -->
-<tr>
-
-<!-- image six -->
-<td rowspan="2">
-<img src="images/button.jpg" alt="6" width="100%">
-</td>
-
-<!-- image seven -->
-<td rowspan="3">
-<img src="images/site.jpg" alt="7" width="100%">
-</td>
-</tr>
-
-<!-- row five -->
-<tr>
-
-<!-- image eight -->
-<td rowspan="2">
-<img src="images/quiz.jpg" alt="8" width="100%">
-</td>
-</tr>
-
-<!-- row six -->
-<tr>
-
-<!-- image nine -->
-<td>
-<img src="images/mystery.jpg" alt="9" width="100%">
-</td>
-
-</tr>
-</table>
-</section>
+</div>
+</article>
 
 
 
