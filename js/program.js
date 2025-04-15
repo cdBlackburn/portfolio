@@ -1,3 +1,6 @@
+//SURVEY LINK ALERT
+alert("WAIT! Are you from my Web Systems course? Do you want to help me improve my site? Please visit my survey here at this link: https://forms.gle/aQKrVkBbaFWkF6uG7")
+
 //quickly change the source of an element
 //x = id string; y = new src
 function changeSRC(x, y)
