@@ -1,3 +1,9 @@
+//form alert
+function error()
+{
+	alert("Unfortunately github does not allow for this sort of form submission. In order to complete this form you must navigate to this link: https://forms.gle/MNMoD1DYHXASz4WM7");
+}
+
 //quickly change the source of an element
 //x = id string; y = new src
 function changeSRC(x, y)
