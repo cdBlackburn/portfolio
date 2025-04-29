@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,51 +85,71 @@ Email: casuallyabnormal+business@gmail.com
 
 
 
+<!-- FORM -->
+<form action="connect.php" method="post">
+
+
+
 <!-- question -->
 <section>
 
+<!-- form section -->
+<h2> Get Involved </h2>
+
+<div id="form">
+
 <!-- header -->
-<h2> Submit A Question </h2>
+<h3> Name </h3>
+
+<!-- content -->
+<p> For data management purposes, please include your name. </p>
+
+<h4> Name:
+
+<!--textbox -->
+<input type="text" name="name" required>
+
+</h4>
+
+
+
+<!-- header -->
+<h3> Submit A Question </h3>
 
 <!-- content -->
 <p> Have a question? Submit one here or email me at the email listed above. </p>
 
-<h3>
+<h4>
 
 <!--textbox -->
-<textarea id="box" rows="4" placeholder="Questions..."></textarea>
+<textarea id="box" rows="4" placeholder="Questions..." name="question"></textarea>
+<br>
 
-<!-- submit -->
-<input type="submit">
-
-</h3>
-</section>
-
-
-
-<br><hr><br>
+</h4>
 
 
 
 <!-- newsletter -->
-<section>
 
 <!-- header -->
-<h2> Newsletter </h2>
+<h3> Newsletter </h3>
 
 <!-- content -->
 <p> Interested in getting updated on events and projects in the works? Add your email here and subscribe to my newsletter! </p>
 
-<h3> Email
+<h4> Email:
 
 <!--textbox -->
-<input type="text">
+<input type="text" name="email">
+
+</h4>
 
 <!-- submit -->
-<input type="submit">
+<button type="submit">Submit</button>
 
-</h3>
+</div>
 </section>
+</form>
 
 
 
