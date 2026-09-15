@@ -11,7 +11,7 @@
 <title> Cas Blackburn - Home </title>
 
 <!-- stylesheet -->
-<link href="css/stylesheet.css" rel="stylesheet">
+<!-- <link href="css/stylesheet.css" rel="stylesheet"> -->
 
 </head>
 
@@ -25,141 +25,134 @@
   gtag('config', 'G-KS68YTKQW7');
 </script>
 
+<!-- adds script for slideshow -->
 <script src="js/program.js"></script>
   
 <body>
 
 
-
+<!-- HEADER SECTION
+INCLUDES : 
+LOGO
+PAGE TITLE
+PROPOSITION / CALLL TO ACTION
+LINKS TO OTHER PAGES-->
 <header>
+	
+	<!-- logo -->
+	<img src="images/logo.jpg" alt="Cas logo">
+	
+	<h1> Cas Blackburn </h1>
 
-<!-- flex container hopefully! -->
-<div id="container">
+	<!-- proposition -->
+	<h2> Programming, design, animation </h2>
 
-<!-- logo -->
-<div>
-<img src="images/logo.jpg" alt="Cas Logo" id="logo">
-</div>
 
-<div id="header">
-<!-- name -->
-<h1> Cas Blackburn </h1>
 
-<!-- proposition -->
-<h2> Programming, design, animation </h2>
+	<!-- page navigation -->
+	<nav>
 
-</div>
-
-</div>
-
-  
-
-<!-- page navigation -->
-<nav>
-
-<h3>
-<!-- links -->
-<a href="index.html">Home</a>
-<a href="gallery.html">Works</a>
-<a href="form.html">Inquiries</a>
-
-</h3>
-</nav>
+	<!-- links -->
+	<h3>
+	<a href="index.html">Home</a>
+	<a href="gallery.html">Works</a>
+	<a href="form.html">Inquiries</a>
+	</h3>
+	
+	</nav>
 </header>
 
 
 
+<!-- FIRST SECTION
+INCLUDES : 
+ TITLE 
+ WRITTEN INTRODUCTION
+ HEADSHOT-->
 <!-- about me -->
-<article class="flex">
+<article>
 
-<!-- left block -->
-<div>
+	<!-- header -->
+	<h2> About Me </h2>
 
-<!-- header -->
-<h2> About Me </h2>
+	<!-- content -->
+	<p>
+	&nbsp;&nbsp;&nbsp;Welcome! My name is Alissa Blackburn, but I go by Cas. My pronouns are they/them and I graduated at the University of South Carolina in 2026 with a degree in Media Arts and a minor in Applied Computing. I have been pursuing the arts since 2016 and programming since 2024. 
+	<br>
+	&nbsp;&nbsp;&nbsp;After taking a required computer science class in university I discovered a huge passion for combining problem solving and creativity. This resulted in an interest in website design and video game design. Please take a look at my work and contact me if you're interested in working together. 
+	</p>
 
-<!-- content -->
-<p>
-&nbsp;&nbsp;&nbsp;Welcome! My name is Alissa Blackburn, but I go by Cas. My pronouns are they/them and I am a senior at UofSC. I will be graduating December of this year with a degree in Media Arts and a minor in Applied Computing. I have been pursuing the arts for ten years now and programming for two. 
-<br>
-&nbsp;&nbsp;&nbsp;I recently discovered my passion for combining programming and art which has resulted in an interest in website design and video game design. Please take a look at my works and contact me if you're interested in working with me. 
-</p>
-</div>
+	<!-- self portrait -->
+	<img src="images/selfPortrait.JPG" alt="Self Portrait" width="100%" id="self">
 
-<!-- right block -->
-<div>
-
-<!-- self portrait -->
-<img src="images/selfPortrait.JPG" alt="Self Portrait" width="100%" id="self">
-
-</div>
 </article>
 
 <br><hr><br>
 
+
+
+<!-- SECOND SECTION
+INCLUDES : 
+TITLE
+SLIDESHOW
+SKILLS-->
 <!-- skills -->
 <article>
 
-<!-- left -->
-<div>
+	<!-- image slideshow -->
+	<span class="flex">
+	<!-- left image -->
+	<img id="leftImg" src="images/orchid.JPG" alt="Pink Orchids" width="30%">
 
-<!-- image slideshow -->
-<span class="flex">
-<!-- left image -->
-<img id="leftImg" src="images/orchid.JPG" alt="Pink Orchids" width="30%">
+	<!-- middle image -->
+	<img id="midImg" src="images/mandala.JPG" alt="Digital Mandala" width="30%">
 
-<!-- middle image -->
-<img id="midImg" src="images/mandala.JPG" alt="Digital Mandala" width="30%">
+	<!-- right image -->
+	<img id="rightImg" src="images/charcoalPenHand.jpg" alt="Charcoal Illustration" width="30%">
+	</span>
 
-<!-- right image -->
-<img id="rightImg" src="images/charcoalPenHand.jpg" alt="Charcoal Illustration" width="30%">
-</span>
+	<!-- caption -->
+	<h4 class="center"> 
+		<input type="button" value="<--" onclick="slideshowL('leftImg', 'midImg', 'rightImg')">  
+		<span id="caption">Digital Mandala</span>
+		<input type="button" value="-->" onclick="slideshowR('leftImg', 'midImg', 'rightImg')">
+	</h4>
 
-<!-- caption -->
-<h4 class="center"> 
-<input type="button" value="<--" onclick="slideshowL('leftImg', 'midImg', 'rightImg')">  
-<span id="caption">Digital Mandala</span>
-<input type="button" value="-->" onclick="slideshowR('leftImg', 'midImg', 'rightImg')">
-</h4>
+	<!-- header -->
+	<h3> Skills </h3>
 
-</div>
+	<!-- content -->
+	<ul>
+		<li> Animation </li>
+		<li> Blender </li>
+		<li> Character Design </li>
+		<li> C# </li>
+		<li> HTML, CSS, JavaScript </li>
+		<li> Low Poly 3-D Modeling </li>
+		<li> Python </li>
+		<li> UI and UX Design </li>
+		<li> Unity </li>
+		<li> Video Game Design </li>
+		<li> Website Design </li>
+	</ul>
 
-<!-- right -->
-<div>
-
-<!-- header -->
-<h3> Skills </h3>
-
-<!-- content -->
-<div class="bodyBlock">
-<ul>
-<li> Animation </li>
-<li> Creative Cloud </li>
-<li> Digital Design </li>
-<li> Editing (Video and Photo) </li>
-<li> HTML, CSS, JavaScript </li>
-<li> Illustration </li>
-<li> Photography </li>
-<li> Python </li>
-<li> Unity </li>
-<li> Video Game Design </li>
-<li> Videography </li>
-<li> Website Design </li>
-</ul>
-</div>
-
-</div>
 </article>
 
 
 
+<!-- FOOTER
+INCLUDES : 
+ANY RELEVANT CREDITS
+CREDITS ME FOR MAJORITY
+CREDITS ARIELLA FOR HER CONTRIBUTIONS -->
 <!-- footer -->
 <footer>
 
-<!-- copyright information -->
-<p>
-Designed and programmed by Cas Blackburn
-</p>
+	<!-- copyright information -->
+	<p>
+	Entirely designed and programmed by Cas (Alissa) Blackburn
+	<!-- credit to ariella for headshot photography? -->
+	</p>
 
 </footer>
 
